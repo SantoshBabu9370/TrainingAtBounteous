@@ -1,24 +1,19 @@
 
-
 class removeNth {
-    
     public static Node removeNthFromEnd(Node head, int n) {
-        Node res = new Node(-1);
-        res.next = head;
-        Node slow = res;
-        Node fast = head; // ✅ Use a separate pointer instead of modifying head
+        Node res=new Node(-1);
+        res.next=head;
+        Node slow=res;
+        Node fast=head; 
 
-        // ✅ Move fast pointer n steps ahead, checking for null
-        while (n-- > 0) {
-            if (fast == null) return res.next; // ✅ Handle if n > length
-            fast = fast.next;
+        while (n-->0) {
+            if (fast==null) return res.next; 
+            fast=fast.next;
         }
-
         while (fast != null) {
             fast = fast.next;
             slow = slow.next;
         }
-
         slow.next = slow.next.next;
         return res.next;
     }
