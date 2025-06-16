@@ -1,5 +1,9 @@
 package com.example.Order_Processing_System.service;
 
+import com.example.Order_Processing_System.exception.InvalidOrderStateException;
+import com.example.Order_Processing_System.model.Order;
+import com.example.Order_Processing_System.model.OrderEvent;
+import com.example.Order_Processing_System.model.OrderState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.stereotype.Service;
