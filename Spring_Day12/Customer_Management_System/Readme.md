@@ -1,6 +1,6 @@
-Service Connect is a Java Spring Boot–based web application that links customers with trusted service providers
- for home service needs. Users can register, log in, create service requests, manage appointments, handle payments via 
-a built-in wallet, and track notifications. Service providers can accept jobs, update their availability calendars, and
-withdraw earnings after completing tasks. The project uses MySQL for data storage, ensures secure authentication using
-session tokens, and includes useful features like service request tracking, audit logging, and basic analytics to monitor 
-app usage.
+Service Connect is a home services platform developed using Java Spring Boot, designed to seamlessly bridge customers with verified service professionals. The application offers a range of functionalities: users can create accounts, log in securely, book and manage service appointments, make payments through a built-in digital wallet, and stay informed with notification alerts. On the other side, service providers have tools to accept assignments, update their work schedules, and request payouts after job completion. The system is backed by a MySQL database and leverages session tokens for secure user authentication. Additional features include detailed tracking of service activity, audit trails for accountability, and simple analytics to gain insights into platform usage.
+
+
+
+
+
