@@ -1,4 +1,4 @@
-package Java_Day9.EmployeeTaskTrackerSystem.src.service;
+package service;
 import Modules.Employee;
 import Modules.Task;
 import java.time.LocalDate;
@@ -8,7 +8,10 @@ import java.util.stream.Collectors;
 public class TaskManager {
     private Map<Employee, List<Task>> employeeTasks = new HashMap<>();
     public void assignTask(Employee e, Task t) {
-        employeeTasks.computeIfAbsent(e, k -> new ArrayList<>()).add(t);
+       if (!employeeTasks.containsKey(e)) {
+       employeeTasks.put(e, new ArrayList<>());}
+          employeeTasks.get(e).add(t);
+
     }
     public void printTasksDueTomorrow() {
         System.out.println("Tasks Due Tomorrow:");
